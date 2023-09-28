@@ -1,0 +1,40 @@
+XML Document Structure:
+  The XML document is represented by the XmlDocument class in C#.
+  It provides methods and properties for creating, loading, manipulating, and saving XML data.
+
+Creating the XML Document:
+  If the XML file doesn't exist, a new XML document is created using the XmlDocument class.
+  The CreateElement method is used to create elements within the document.
+  The AppendChild method is used to add child elements to the document.
+  The CreateElement method creates the root element named "Elements" and appends it to the document.
+
+Loading the XML Document:
+  The XML document is loaded using the Load method of the XmlDocument class.
+  The Load method reads the XML data from the file and creates an in-memory representation of the XML structure.
+
+Selecting Nodes with XPath:
+  XPath is used to query and select specific nodes in the XML document.
+  The SelectNodes method of the XmlNodeList class is used to select multiple nodes that match a given XPath expression.
+  The SelectSingleNode method of the XmlNode class is used to select a single node that matches a given XPath expression.
+
+Reading Node Values:
+  The InnerText property of an XmlNode object is used to retrieve the text content of a specific node.
+  It returns the concatenated values of all the immediate child nodes' text content.
+
+Adding Elements to the XML Document:
+  New elements are added to the XML document using the CreateElement method of the XmlDocument class.
+  The CreateElement method creates a new XmlElement object with the specified name.
+  The InnerText property of the XmlElement object is set to the desired value.
+  The new element is appended to the parent element using the AppendChild method.
+
+Updating Elements in the XML Document:
+  The SelectSingleNode method is used to find the specific element to update based on its ID attribute.
+  The InnerText property of the selected XmlNode object is updated with the new value.
+
+Removing Elements from the XML Document:
+  The SelectSingleNode method is used to find the specific element to delete based on its ID attribute.
+  The RemoveChild method is called on the parent node to remove the selected element from the XML structure.
+
+Saving Changes to the XML Document:
+  The Save method of the XmlDocument class is used to save the modified XML structure back to the XML file.
+  It overwrites the existing XML file with the updated XML data.

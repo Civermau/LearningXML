@@ -1,0 +1,19 @@
+Main Method:
+  The Main method serves as the entry point for the program execution.
+  It contains a loop that presents a menu of options to the user until the "Exit" option is selected.
+  The loop is controlled by the boolean variable exit.
+
+Menu Options:
+  The user is presented with a menu of options using the Console.WriteLine method.
+  The user's input is obtained using the Console.ReadLine method.
+
+Option 1: CRUD:
+  If the user selects option 1, the CRUD.CRUDMain() method is called.
+  This method is expected to perform CRUD (Create, Read, Update, Delete) operations.
+
+Option 2: XML Example:
+  If the user selects option 2, the Books.SaveLogics() method is called.
+  This method is expected to demonstrate XML-related operations using an example scenario.
+
+Option 9: Exit:
+  If the user selects option 9, the exit variable is set to true, terminating the loop and exiting the program.

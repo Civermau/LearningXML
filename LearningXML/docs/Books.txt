@@ -1,0 +1,31 @@
+XML Document Structure:
+  The XML document is represented by the XmlDocument class in C#.
+  It provides methods and properties for creating, loading, manipulating, and saving XML data.
+
+Creating the XML Document:
+  A new XML document is created using the XmlDocument class.
+  The CreateElement method is used to create elements within the document.
+  The AppendChild method is used to add child elements to the document.
+  The root element named "Libros" is created and appended to the document.
+
+Adding Attribute and Elements to the XML Document:
+  New elements are added to the XML document using the CreateElement method of the XmlDocument class.
+  The CreateAttribute method is used to create an attribute for a specific element.
+  The Value property of the XmlAttribute object is set to the desired value.
+  The new elements and attributes are appended to their respective parent elements using the AppendChild method.
+
+Saving the XML Document:
+  The Save method of the XmlDocument class is used to save the XML document to a file.
+  It takes the file path as a parameter and overwrites the existing file with the updated XML data.
+
+Loading the XML Document and Accessing Elements:
+  The Load method of the XmlDocument class is used to load an XML document from a file.
+  The DocumentElement property of the XmlDocument object is used to get the root element of the XML document.
+  The SelectSingleNode method of the XmlNode class is used to select a single node that matches a given XPath expression.
+
+Reading Node Values:
+  The InnerText property of an XmlNode object is used to retrieve the text content of a specific node.
+  It returns the concatenated values of all the immediate child nodes' text content.
+
+Modifying Values in the XML Document:
+  The value of a specific node in the XML document is modified by selecting the node and updating its InnerText property.
